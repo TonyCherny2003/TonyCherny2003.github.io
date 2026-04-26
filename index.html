@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЮНИМАКС | Комплексные системы безопасности</title>
+    <meta name="description" content="ЮНИМАКС проектирует, внедряет и обслуживает комплексные системы безопасности для бизнеса и инфраструктурных объектов.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Фиксированная шапка сайта -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="#hero" aria-label="ЮНИМАКС">
+                <span class="logo-mark">U</span>
+                <span class="logo-text">
+                    <strong>ЮНИМАКС</strong>
+                    <span>Системы безопасности</span>
+                </span>
+            </a>
+
+            <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="site-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="site-nav" id="site-nav" aria-label="Основная навигация">
+                <a href="#services">Услуги</a>
+                <a href="#advantages">Преимущества</a>
+                <a href="#solutions">Решения</a>
+                <a href="#workflow">Этапы</a>
+                <a href="#projects">Проекты</a>
+                <a href="#contacts">Контакты</a>
+                <a class="nav-button" href="#request">Оставить заявку</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Главный экран -->
+        <section class="hero" id="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <p class="section-kicker">Комплексная безопасность для бизнеса и объектов инфраструктуры</p>
+                    <h1>Проектирование и внедрение современных систем безопасности для объектов любого масштаба</h1>
+                    <p class="hero-text">
+                        ЮНИМАКС разрабатывает и сопровождает инженерные решения в сфере видеонаблюдения,
+                        СКУД, сигнализации, СКС и автоматизации парковочных пространств.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#request">Рассчитать проект</a>
+                        <a class="button button-secondary" href="#services">Смотреть услуги</a>
+                    </div>
+                    <ul class="hero-points">
+                        <li>Работаем с корпоративными и распределенными объектами</li>
+                        <li>От аудита и проекта до монтажа и сервисного сопровождения</li>
+                        <li>Решения под задачи офиса, склада, производства и парковки</li>
+                    </ul>
+                </div>
+
+                <div class="hero-visual" aria-label="Визуализация систем безопасности">
+                    <div class="dashboard-card dashboard-main">
+                        <span class="card-label">Инженерный стек</span>
+                        <h2>Единая экосистема безопасности объекта</h2>
+                        <div class="signal-grid">
+                            <div class="signal-item">
+                                <span>24/7</span>
+                                <small>Мониторинг</small>
+                            </div>
+                            <div class="signal-item">
+                                <span>AI</span>
+                                <small>Распознавание</small>
+                            </div>
+                            <div class="signal-item">
+                                <span>СКУД</span>
+                                <small>Контроль доступа</small>
+                            </div>
+                            <div class="signal-item">
+                                <span>ПС</span>
+                                <small>Пожарная защита</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-card dashboard-side">
+                        <span class="card-label">Типовой объект</span>
+                        <ul>
+                            <li>Камеры по периметру и в критических зонах</li>
+                            <li>Контроль доступа для сотрудников и посетителей</li>
+                            <li>Интеграция с парковкой и шлагбаумами</li>
+                        </ul>
+                    </div>
+
+                    <div class="hero-glow"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Услуги -->
+        <section class="section" id="services">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-kicker">Услуги</p>
+                    <h2>Комплексные решения по безопасности и инженерной инфраструктуре</h2>
+                    <p>Подбираем конфигурацию под задачи объекта, бюджет и требования к надежности.</p>
+                </div>
+
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-icon">01</div>
+                        <h3>Видеонаблюдение</h3>
+                        <p>Проектирование и монтаж систем внутреннего и наружного наблюдения с удаленным доступом.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">02</div>
+                        <h3>СКУД</h3>
+                        <p>Организация контроля доступа, разграничения прав прохода и учета событий на объекте.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">03</div>
+                        <h3>Охранная сигнализация</h3>
+                        <p>Решения для выявления несанкционированного проникновения и оперативного оповещения.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">04</div>
+                        <h3>Пожарная сигнализация</h3>
+                        <p>Системы обнаружения пожара и передачи тревожных сигналов с учетом норм безопасности.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">05</div>
+                        <h3>СКС</h3>
+                        <p>Построение структурированных кабельных систем для устойчивой работы цифровой инфраструктуры.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">06</div>
+                        <h3>Автоматизация парковок</h3>
+                        <p>Шлагбаумы, сценарии въезда, учет транспорта, управление доступом и контроль загрузки зон.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">07</div>
+                        <h3>Распознавание номеров и лиц</h3>
+                        <p>Интеллектуальная аналитика для допуска на объект, мониторинга потоков и журналирования.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">08</div>
+                        <h3>Сервис и обслуживание</h3>
+                        <p>Плановая проверка, диагностика, сопровождение и модернизация действующих систем.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Преимущества -->
+        <section class="section section-alt" id="advantages">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-kicker">Преимущества</p>
+                    <h2>Почему компании выбирают ЮНИМАКС</h2>
+                </div>
+
+                <div class="advantages-grid">
+                    <article class="advantage-card">
+                        <h3>Опыт с 2004 года</h3>
+                        <p>Практика внедрения систем безопасности на объектах разного масштаба и назначения.</p>
+                    </article>
+                    <article class="advantage-card">
+                        <h3>Комплексный подход</h3>
+                        <p>Объединяем инженерные и организационные решения в единую систему безопасности.</p>
+                    </article>
+                    <article class="advantage-card">
+                        <h3>Полный цикл работ</h3>
+                        <p>Берем на себя аудит, проектирование, монтаж, настройку и дальнейшее обслуживание.</p>
+                    </article>
+                    <article class="advantage-card">
+                        <h3>Корпоративные объекты</h3>
+                        <p>Учитываем требования бизнеса к масштабируемости, надежности и контролю доступа.</p>
+                    </article>
+                    <article class="advantage-card">
+                        <h3>Гарантия и сопровождение</h3>
+                        <p>Поддерживаем системы после запуска и помогаем сохранять стабильную работу оборудования.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Типовые решения -->
+        <section class="section" id="solutions">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-kicker">Типовые решения</p>
+                    <h2>Конфигурации под задачи разных типов объектов</h2>
+                    <p>Каждое решение адаптируется под площадь, режим эксплуатации и требования к доступу.</p>
+                </div>
+
+                <div class="solutions-grid">
+                    <article class="solution-card">
+                        <h3>Офис</h3>
+                        <p>СКУД, видеонаблюдение, охранные датчики, интеграция с входной группой и серверной.</p>
+                    </article>
+                    <article class="solution-card">
+                        <h3>Склад</h3>
+                        <p>Контроль периметра, аналитика движения, парковочная логика, видеонаблюдение зон отгрузки.</p>
+                    </article>
+                    <article class="solution-card">
+                        <h3>Торговый центр</h3>
+                        <p>Многоуровневая система мониторинга, контроль служебных помещений и входных потоков.</p>
+                    </article>
+                    <article class="solution-card">
+                        <h3>Производство</h3>
+                        <p>Учет зон допуска, пожарная и охранная сигнализация, контроль критических маршрутов.</p>
+                    </article>
+                    <article class="solution-card">
+                        <h3>Парковка</h3>
+                        <p>Шлагбаумы, распознавание номеров, сценарии въезда-выезда и управление доступом.</p>
+                    </article>
+                    <article class="solution-card">
+                        <h3>Коттеджный поселок</h3>
+                        <p>Пост охраны, видеонаблюдение улиц, шлагбаумы, гостевой доступ и сервисное сопровождение.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Этапы работы -->
+        <section class="section section-alt" id="workflow">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-kicker">Этапы работы</p>
+                    <h2>Понятный путь от заявки до стабильной эксплуатации</h2>
+                </div>
+
+                <div class="timeline">
+                    <article class="timeline-item">
+                        <span class="timeline-step">1</span>
+                        <h3>Заявка</h3>
+                        <p>Уточняем базовые требования, тип объекта и ожидаемый результат.</p>
+                    </article>
+                    <article class="timeline-item">
+                        <span class="timeline-step">2</span>
+                        <h3>Аудит объекта</h3>
+                        <p>Анализируем риски, зонирование, инфраструктурные ограничения и режим эксплуатации.</p>
+                    </article>
+                    <article class="timeline-item">
+                        <span class="timeline-step">3</span>
+                        <h3>Проектирование</h3>
+                        <p>Формируем архитектуру системы и схему размещения оборудования.</p>
+                    </article>
+                    <article class="timeline-item">
+                        <span class="timeline-step">4</span>
+                        <h3>Подбор оборудования</h3>
+                        <p>Выбираем компоненты по задачам, нагрузке, совместимости и бюджету.</p>
+                    </article>
+                    <article class="timeline-item">
+                        <span class="timeline-step">5</span>
+                        <h3>Монтаж</h3>
+                        <p>Выполняем установку, прокладку линий и подключение подсистем.</p>
+                    </article>
+                    <article class="timeline-item">
+                        <span class="timeline-step">6</span>
+                        <h3>Настройка</h3>
+                        <p>Проводим пусконаладку, тестирование сценариев и передачу в эксплуатацию.</p>
+                    </article>
+                    <article class="timeline-item">
+                        <span class="timeline-step">7</span>
+                        <h3>Обслуживание</h3>
+                        <p>Обеспечиваем сервис, профилактику и поддержку после запуска проекта.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Проекты -->
+        <section class="section" id="projects">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-kicker">Проекты</p>
+                    <h2>Примеры типовых реализованных задач</h2>
+                    <p>В прототипе используются нейтральные названия без раскрытия закрытых данных заказчиков.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <span class="project-tag">Логистика</span>
+                        <h3>Складской комплекс</h3>
+                        <p>Система видеонаблюдения, контроль въездных зон, распознавание номеров и охранная сигнализация.</p>
+                    </article>
+                    <article class="project-card">
+                        <span class="project-tag">Бизнес-центр</span>
+                        <h3>Офисный центр</h3>
+                        <p>СКУД, видеонаблюдение общих зон, интеграция с турникетами и контроль доступа в служебные помещения.</p>
+                    </article>
+                    <article class="project-card">
+                        <span class="project-tag">Retail</span>
+                        <h3>Торговая площадка</h3>
+                        <p>Пожарная сигнализация, видеомониторинг, контроль технических помещений и сервисное сопровождение.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Форма заявки -->
+        <section class="section request-section" id="request">
+            <div class="container request-grid">
+                <div class="request-content">
+                    <p class="section-kicker">Заявка</p>
+                    <h2>Обсудим задачу и подберем решение под ваш объект</h2>
+                    <p>
+                        Оставьте краткую информацию, и мы подготовим предложение по системам безопасности
+                        с учетом типа объекта и требуемого уровня контроля.
+                    </p>
+                </div>
+
+                <form class="request-form" id="request-form" novalidate>
+                    <div class="form-group">
+                        <label for="name">Имя</label>
+                        <input id="name" name="name" type="text" placeholder="Введите ваше имя">
+                        <span class="form-error" aria-live="polite"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input id="phone" name="phone" type="tel" placeholder="+7 (___) ___-__-__">
+                        <span class="form-error" aria-live="polite"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="object-type">Тип объекта</label>
+                        <select id="object-type" name="objectType">
+                            <option value="">Выберите тип объекта</option>
+                            <option value="office">Офис</option>
+                            <option value="warehouse">Склад</option>
+                            <option value="mall">Торговый центр</option>
+                            <option value="production">Производство</option>
+                            <option value="parking">Парковка</option>
+                            <option value="settlement">Коттеджный поселок</option>
+                        </select>
+                        <span class="form-error" aria-live="polite"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comment">Комментарий</label>
+                        <textarea id="comment" name="comment" rows="5" placeholder="Кратко опишите задачу, площадь объекта или желаемые системы"></textarea>
+                        <span class="form-error" aria-live="polite"></span>
+                    </div>
+
+                    <button class="button button-primary button-full" type="submit">Отправить заявку</button>
+                    <p class="form-status" id="form-status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Контакты -->
+    <footer class="site-footer" id="contacts">
+        <div class="container footer-grid">
+            <div>
+                <p class="section-kicker">Контакты</p>
+                <h2>ЮНИМАКС</h2>
+                <p>Комплексные системы безопасности для корпоративных и инфраструктурных объектов.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Связаться</h3>
+                <a href="tel:+78001234567">+7 (800) 123-45-67</a>
+                <a href="mailto:info@unimax-example.ru">info@unimax-example.ru</a>
+            </div>
+            <div class="footer-column">
+                <h3>Адрес</h3>
+                <p>г. Москва, ул. Примерная, д. 12, офис 5</p>
+                <p>Пн-Пт: 09:00-18:00</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
