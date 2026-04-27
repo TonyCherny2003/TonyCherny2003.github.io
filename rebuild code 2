@@ -1,0 +1,163 @@
+       <nav class="site-nav" id="site-nav" aria-label="Основная навигация">
+                <a href="#solutions">Решения</a>
+                <a href="#services">Услуги</a>
+                <a href="#pricing">Цены</a>
+                <a href="#advantages">Преимущества</a>
+                <a href="#workflow">Этапы</a>
+                <a href="#projects">Проекты</a>
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-kicker">Услуги</p>
+                    <h2>Комплексные решения по безопасности и инженерной инфраструктуре</h2>
+                    <p>Подбираем конфигурацию под задачи объекта, бюджет и требования к надежности.</p>
+                    <h2>Услуги и направления, которые ЮНИМАКС предлагает на действующем сайте</h2>
+                    <p>В блок включены как системы безопасности, так и сопутствующие работы: от обследования и проектирования до шефмонтажа и технического обслуживания.</p>
+                </div>
+
+                <div class="content-subhead">
+                    <h3>Системы и направления</h3>
+                    <p>Основные направления монтажа и внедрения систем безопасности.</p>
+                </div>
+
+                <div class="services-grid">
+                        <h3>Сервис и обслуживание</h3>
+                        <p>Плановая проверка, диагностика, сопровождение и модернизация действующих систем.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">09</div>
+                        <h3>Система защиты периметра</h3>
+                        <p>Средства контроля периметра для уличных и протяженных объектов с учетом сценариев раннего обнаружения.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">10</div>
+                        <h3>Установка IP-видеонаблюдения</h3>
+                        <p>Развертывание сетевых камер и сопутствующей инфраструктуры для цифрового мониторинга объекта.</p>
+                    </article>
+                </div>
+
+                <div class="content-subhead">
+                    <h3>Проектные и сервисные услуги</h3>
+                    <p>Работы, которые на старом сайте выведены отдельным перечнем услуг.</p>
+                </div>
+
+                <div class="support-grid">
+                    <article class="support-card">
+                        <h3>Обследование</h3>
+                        <p>Выезд специалистов на объект, фиксация исходных условий и подготовка базы для проектных решений.</p>
+                    </article>
+                    <article class="support-card">
+                        <h3>Аудит и консалтинг</h3>
+                        <p>Экспертная оценка существующей инфраструктуры и рекомендации по развитию системы безопасности.</p>
+                    </article>
+                    <article class="support-card">
+                        <h3>Разработка технического задания</h3>
+                        <p>Подготовка структурированного ТЗ для закупки, проектирования и дальнейшей реализации работ.</p>
+                    </article>
+                    <article class="support-card">
+                        <h3>Проектирование</h3>
+                        <p>Разработка архитектуры системы, схем размещения оборудования и логики взаимодействия подсистем.</p>
+                    </article>
+                    <article class="support-card">
+                        <h3>Поставка</h3>
+                        <p>Комплектация объекта оборудованием и согласование состава поставки под требования проекта.</p>
+                    </article>
+                    <article class="support-card">
+                        <h3>Шефмонтаж</h3>
+                        <p>Контроль хода монтажных работ и экспертное сопровождение внедрения на площадке.</p>
+                    </article>
+                    <article class="support-card">
+                        <h3>Обучение</h3>
+                        <p>Подготовка операторов и пользователей для корректной и безопасной эксплуатации системы.</p>
+                    </article>
+                    <article class="support-card">
+                        <h3>Техническое обслуживание</h3>
+                        <p>Регламентный сервис, диагностика, профилактика отказов и поддержание работоспособности комплекса.</p>
+                    </article>
+                    <article class="support-card">
+                        <h3>Разработка СПО</h3>
+                        <p>Создание специализированного программного обеспечения под задачи интеграции и управления.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Цены -->
+        <section class="section" id="pricing">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-kicker">Цены</p>
+                    <h2>Примеры цен со старого сайта ЮНИМАКС</h2>
+                    <p>Ниже показаны стартовые и типовые позиции, опубликованные на прежнем сайте компании. Формулировки адаптированы для нового интерфейса, значения сохранены по источнику.</p>
+                </div>
+
+                <div class="pricing-grid">
+                    <article class="price-card price-card-accent">
+                        <span class="price-tag">Видеонаблюдение под ключ</span>
+                        <h3>Типовые комплекты</h3>
+                        <ul class="price-list">
+                            <li><span>1 камера</span><strong>12 990 руб.</strong></li>
+                            <li><span>2 камеры</span><strong>19 990 руб.</strong></li>
+                            <li><span>4 камеры</span><strong>30 890 руб.</strong></li>
+                            <li><span>8 камер</span><strong>55 995 руб.</strong></li>
+                        </ul>
+                    </article>
+
+                    <article class="price-card">
+                        <span class="price-tag">Монтаж камер</span>
+                        <h3>Базовые монтажные позиции</h3>
+                        <ul class="price-list">
+                            <li><span>Камера в помещении с подключением</span><strong>1 499 руб.</strong></li>
+                            <li><span>Камера с подключением Wi-Fi</span><strong>1 795 руб.</strong></li>
+                            <li><span>Уличная камера с подключением</span><strong>1 898 руб.</strong></li>
+                            <li><span>Видеоаналитика на 1 канал</span><strong>от 1 490 руб.</strong></li>
+                        </ul>
+                    </article>
+
+                    <article class="price-card">
+                        <span class="price-tag">СКУД</span>
+                        <h3>Работы по системе доступа</h3>
+                        <ul class="price-list">
+                            <li><span>Монтаж электромеханической калитки</span><strong>6 000 руб.</strong></li>
+                            <li><span>Установка доводчика на дверь</span><strong>845 руб.</strong></li>
+                            <li><span>Программирование СКУД</span><strong>от 1 500 руб.</strong></li>
+                            <li><span>Пусконаладка всей системы</span><strong>20% от СМР</strong></li>
+                        </ul>
+                    </article>
+
+                    <article class="price-card">
+                        <span class="price-tag">Охранная сигнализация</span>
+                        <h3>Часто встречающиеся позиции</h3>
+                        <ul class="price-list">
+                            <li><span>Монтаж ИК-датчика</span><strong>350 руб.</strong></li>
+                            <li><span>Монтаж датчика движения в помещении</span><strong>490 руб.</strong></li>
+                            <li><span>Установка GSM-модуля</span><strong>2 000 руб.</strong></li>
+                            <li><span>Программирование прибора</span><strong>6 000 руб.</strong></li>
+                        </ul>
+                    </article>
+
+                    <article class="price-card">
+                        <span class="price-tag">Шлагбаумы</span>
+                        <h3>Автоматические въездные решения</h3>
+                        <ul class="price-list">
+                            <li><span>Установка на готовое основание</span><strong>5 500 руб.</strong></li>
+                            <li><span>Бетонирование основания</span><strong>9 000 руб.</strong></li>
+                            <li><span>Установка и подключение шлагбаума</span><strong>7 000 руб.</strong></li>
+                            <li><span>Демонтаж старого шлагбаума</span><strong>2 900 руб.</strong></li>
+                        </ul>
+                    </article>
+
+                    <article class="price-card">
+                        <span class="price-tag">Кабельная инфраструктура</span>
+                        <h3>Отдельные монтажные работы</h3>
+                        <ul class="price-list">
+                            <li><span>Прокладка кабеля открытым способом</span><strong>39 руб./м</strong></li>
+                            <li><span>Прокладка в гофротрубе</span><strong>55 руб./м</strong></li>
+                            <li><span>Прокладка в пластиковом коробе</span><strong>49 руб./м</strong></li>
+                            <li><span>Монтаж кабельного лотка</span><strong>85 руб./м</strong></li>
+                        </ul>
+                    </article>
+                </div>
+
+                <p class="pricing-note">Для дипломного прототипа цены показаны как ориентир из структуры старого сайта. В реальном проекте блок можно связать с отдельной прайс-страницей или каталогом услуг.</p>
+            </div>
+        </section>
