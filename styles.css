@@ -1151,7 +1151,11 @@ p {
     }
 
     .header-inner {
-        grid-template-columns: auto auto;
+        grid-template-columns: auto 1fr;
+    }
+
+    .header-actions {
+        justify-self: end;
     }
 
     .site-nav {
