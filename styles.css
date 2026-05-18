@@ -970,9 +970,10 @@ p {
 }
 
 .timeline article {
-    min-height: 250px;
-    display: flex;
-    flex-direction: column;
+    min-height: 320px;
+    display: grid;
+    grid-template-rows: 54px auto 1fr;
+    align-items: start;
     padding: var(--space-5);
     border-radius: var(--radius-lg);
 }
@@ -982,11 +983,16 @@ p {
     height: 42px;
     display: grid;
     place-items: center;
-    margin-bottom: auto;
     border-radius: 50%;
     background: var(--color-primary-soft);
     color: var(--color-primary);
     font-weight: 900;
+}
+
+.timeline h3 {
+    min-height: 2.2em;
+    display: flex;
+    align-items: flex-start;
 }
 
 .projects-panel {
@@ -1390,11 +1396,11 @@ p {
     }
 
     .timeline article {
-        min-height: auto;
+        min-height: 260px;
     }
 
     .timeline span {
-        margin-bottom: var(--space-6);
+        margin-bottom: 0;
     }
 
     .request-copy,
