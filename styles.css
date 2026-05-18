@@ -489,7 +489,7 @@ p {
 
 .system-map {
     position: absolute;
-    inset: 52px 30px 132px;
+    inset: 52px 46px 190px;
 }
 
 .map-lines {
@@ -526,6 +526,10 @@ p {
     background: #f8f5ea;
     color: var(--color-emerald-ink);
     box-shadow: 0 24px 50px rgba(0, 0, 0, 0.24);
+    align-content: center;
+    justify-items: center;
+    gap: 14px;
+    padding-top: 2px;
 }
 
 .map-core span,
@@ -538,6 +542,7 @@ p {
     font-size: var(--text-xs);
     font-weight: 900;
     letter-spacing: 0.12em;
+    line-height: 1;
     text-transform: uppercase;
 }
 
@@ -546,6 +551,7 @@ p {
     font-family: var(--font-display);
     font-size: 1.55rem;
     line-height: 1;
+    text-align: center;
 }
 
 .map-node {
@@ -1264,7 +1270,7 @@ p {
     }
 
     .system-map {
-        inset: 38px 20px 174px;
+        inset: 38px 20px 196px;
     }
 
     .map-core {
