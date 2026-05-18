@@ -691,10 +691,82 @@ p {
 
 .solution-list p,
 .service-card p,
+.visual-card p,
 .mini-price p,
 .timeline p,
 .project-list p {
     margin-top: var(--space-3);
+}
+
+.visual-section {
+    padding-top: clamp(var(--space-12), 6vw, var(--space-20));
+}
+
+.visual-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-4);
+}
+
+.visual-card {
+    min-height: 100%;
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    background: var(--color-surface);
+    box-shadow: var(--shadow-sm);
+}
+
+.visual-card img {
+    width: 100%;
+    aspect-ratio: 1.38;
+    object-fit: cover;
+    background: var(--color-surface-2);
+}
+
+.visual-card div {
+    padding: var(--space-6);
+}
+
+.visual-card span {
+    display: inline-flex;
+    margin-bottom: var(--space-3);
+    color: var(--color-primary);
+    font-size: var(--text-xs);
+    font-weight: 900;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.visual-card-wide {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    align-items: stretch;
+}
+
+.visual-card-wide img {
+    height: 100%;
+    aspect-ratio: auto;
+}
+
+.visual-card-wide div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.visual-card-dark {
+    background: var(--color-emerald-dark);
+    color: #fff;
+}
+
+.visual-card-dark p {
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.visual-card-dark span {
+    color: #86d8b7;
 }
 
 .services-masonry {
@@ -1223,6 +1295,20 @@ p {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
+    .visual-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .visual-card-wide {
+        grid-column: span 2;
+        grid-template-columns: 1fr;
+    }
+
+    .visual-card-wide img {
+        height: auto;
+        aspect-ratio: 1.38;
+    }
+
     .service-card-large,
     .service-card-dark {
         grid-column: span 2;
@@ -1249,6 +1335,7 @@ p {
     .hero-trust,
     .split-heading,
     .solution-list,
+    .visual-grid,
     .services-masonry,
     .price-cards,
     .timeline,
@@ -1292,9 +1379,14 @@ p {
     }
 
     .service-card-large,
-    .service-card-dark {
+    .service-card-dark,
+    .visual-card-wide {
         grid-column: auto;
         min-height: 280px;
+    }
+
+    .visual-card div {
+        padding: var(--space-5);
     }
 
     .timeline article {
