@@ -1,17 +1,36 @@
-// Мобильное меню, плавная прокрутка и базовая валидация формы
 document.addEventListener("DOMContentLoaded", () => {
+    const root = document.documentElement;
     const header = document.querySelector(".site-header");
     const menuToggle = document.querySelector(".menu-toggle");
     const nav = document.querySelector(".site-nav");
-    const navLinks = document.querySelectorAll('.site-nav a[href^="#"]');
+    const navLinks = document.querySelectorAll('.site-nav a[href^="#"], .brand[href^="#"], .button[href^="#"], .card-link[href^="#"]');
+    const themeToggle = document.querySelector("[data-theme-toggle]");
     const form = document.getElementById("request-form");
     const status = document.getElementById("form-status");
 
+    let currentTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    root.setAttribute("data-theme", currentTheme);
+
     const closeMenu = () => {
+        if (!nav || !menuToggle) {
+            return;
+        }
+
         nav.classList.remove("is-open");
         menuToggle.classList.remove("is-active");
         menuToggle.setAttribute("aria-expanded", "false");
     };
+
+    if (themeToggle) {
+        themeToggle.addEventListener("click", () => {
+            currentTheme = currentTheme === "dark" ? "light" : "dark";
+            root.setAttribute("data-theme", currentTheme);
+            themeToggle.setAttribute(
+                "aria-label",
+                currentTheme === "dark" ? "Включить светлую тему" : "Включить темную тему"
+            );
+        });
+    }
 
     if (menuToggle && nav) {
         menuToggle.addEventListener("click", () => {
@@ -24,6 +43,11 @@ document.addEventListener("DOMContentLoaded", () => {
     navLinks.forEach((link) => {
         link.addEventListener("click", (event) => {
             const targetId = link.getAttribute("href");
+
+            if (!targetId || !targetId.startsWith("#") || targetId.length < 2) {
+                return;
+            }
+
             const targetElement = document.querySelector(targetId);
 
             if (!targetElement) {
@@ -57,6 +81,12 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+            closeMenu();
+        }
+    });
+
     const showFieldError = (field, message) => {
         const group = field.closest(".form-group");
         const error = group ? group.querySelector(".form-error") : null;
@@ -83,10 +113,12 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
 
-    const validateName = (value) => value.trim().length >= 2;
-    const validatePhone = (value) => value.replace(/\D/g, "").length >= 11;
-    const validateObjectType = (value) => value.trim() !== "";
-    const validateComment = (value) => value.trim().length >= 10;
+    const validators = {
+        name: (value) => value.trim().length >= 2,
+        phone: (value) => value.replace(/\D/g, "").length >= 11,
+        objectType: (value) => value.trim() !== "",
+        comment: (value) => value.trim().length >= 10
+    };
 
     if (form && status) {
         const fields = Array.from(form.querySelectorAll("input, select, textarea"));
@@ -106,29 +138,28 @@ document.addEventListener("DOMContentLoaded", () => {
             const phoneField = form.elements.phone;
             const objectTypeField = form.elements.objectType;
             const commentField = form.elements.comment;
-
             let isValid = true;
 
             [nameField, phoneField, objectTypeField, commentField].forEach(clearFieldError);
             status.textContent = "";
             status.className = "form-status";
 
-            if (!validateName(nameField.value)) {
+            if (!validators.name(nameField.value)) {
                 showFieldError(nameField, "Введите имя не короче 2 символов.");
                 isValid = false;
             }
 
-            if (!validatePhone(phoneField.value)) {
+            if (!validators.phone(phoneField.value)) {
                 showFieldError(phoneField, "Укажите корректный номер телефона.");
                 isValid = false;
             }
 
-            if (!validateObjectType(objectTypeField.value)) {
+            if (!validators.objectType(objectTypeField.value)) {
                 showFieldError(objectTypeField, "Выберите тип объекта.");
                 isValid = false;
             }
 
-            if (!validateComment(commentField.value)) {
+            if (!validators.comment(commentField.value)) {
                 showFieldError(commentField, "Добавьте комментарий не короче 10 символов.");
                 isValid = false;
             }
@@ -139,7 +170,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 return;
             }
 
-            status.textContent = "Заявка успешно отправлена. Это демонстрационный прототип без backend.";
+            status.textContent = "Заявка принята в демонстрационном режиме. Для отправки на почту подключите backend или форму GitHub Pages через внешний сервис.";
             status.classList.add("is-success");
             form.reset();
         });
